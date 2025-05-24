@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+#artboard {
+    width: 600px;
+    height: 400px;
+    border: 2px solid #bdc3c7;
+    background-color: #ecf0f1;
+    position: relative;
+    cursor: crosshair;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.shape {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 2s ease-out, transform 2s ease-out;
+    pointer-events: none;
+}
+
+.shape.fade-out {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    border-radius: 0;
+}
+
+.triangle {
+    width: 0;
+    height: 0;
+    background-color: transparent !important;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.controls label {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.controls input[type="color"],
+.controls select {
+    padding: 5px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
