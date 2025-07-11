@@ -9,3 +9,9 @@ Ephemeral ArtBoard is a simple, browser-based drawing app built with **HTML**, *
 - 📏 Adjust brush size for finer or bolder strokes
 - ♻️ Clear the entire canvas with one click
 - ⏳ Ephemeral design — drawings disappear on refresh
+
+## 🛠️ Tech Stack
+
+- **HTML5** – Canvas structure
+- **CSS3** – UI styling
+- **JavaScript (Vanilla)** – Drawing logic and interactivity
